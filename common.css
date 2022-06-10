@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*초기화*/
+body, h1, h2, h3, p, ul { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+/*헤더*/
+#header { height: 42px; border-bottom: 1px solid #000;
+          background: linear-gradient(180deg, #820000 0%, #700000 100%) no-repeat; } 
+#header h1 { color: #fff; text-align: center; }
+#header a { position: absolute; top: 4px; height: 32px;
+            background: url(sprites.png) no-repeat;
+            text-indent: -9999px; }
+#header a.btn {  width: 62px; left: 4px; }
+#header a.toggle { width: 32px; right: 4px; background-position-x: right; }
+/*toggle*/
+#toggle { padding: 20px; background-color: #808080; }
+#toggle ul { overflow: hidden; background-color: #fff; }
+#toggle ul li { width: 80px; height: 30px; float: left; line-height: 30px; }
+#toggle ul li a { color: #333; }
+/*gnb*/
+#gnb ul { display: flex; height: 35px; background-color: #820e0e; border-bottom: 2px solid #000000; }
+#gnb ul li { width: 25%; height: 35px; }
+#gnb ul li a { display: block; background: #820e0e; color: white;
+                text-align: center; line-height: 35px; }
+/*lnb*/           
+#lnb ul { display: flex; height: 35px; background-color: white; border-bottom: 1px solid #000; }             
+#lnb ul li { width: 20%; height: 35px; }                
+#lnb ul li a { position: relative; display: block; background: white; color: black;
+                text-align: center; line-height: 35px; }
+#lnb ul li a::after { content: ""; position: absolute; top: 10px; left: -1px;
+                      height: 15px; border-left: 1px solid #000; }
+/*content*/
+#content { padding-bottom: 50px; }                      
+#content header { padding: 30px 20px; }                      
+#content p { margin: 0 10px 10px; }
+
+/*footer*/
+#footer { padding: 20px 0; border-top: 3px solid #000; text-align: center; }
